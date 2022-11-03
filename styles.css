@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+html, body {
+    margin: 0;
+    border: 0;
+    background: #1f1f1f;
+    background-image: radial-gradient(#3f3f3f 1px, transparent 0);
+    background-size: 10px 10px;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Archivo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: #1e1e1e;
+    border-bottom: 1px solid #2f2f2f;
+}
+
+header a#home {
+    display: inline-block;
+    padding: 10px;
+}
+
+header nav {
+    float: right;
+}
+
+header nav a{
+    display: inline-block;
+    padding: 10px;
+}
+
+header nav a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#heading {
+    height: 300px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 100px;
+    font-weight: bolder;
+    text-align: center;
+    border-bottom: 1px solid #2f2f2f;
+}
+
+@media only screen and (max-width: 1200px) {
+    #heading {
+        flex-direction: column;
+    }
+}
+
+#heading.full {
+    height: calc(100vh - 98px);
+}
+
+#idcard {
+    font-size: medium;
+    width: 350px;
+    font-weight: normal;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: auto 1fr;
+    rotate: -3deg;
+    padding: 5px 5px 5px 5px;
+    background: #1e1e1e;
+    border: 1px solid #2f2f2f;
+    border-radius: 4px;
+    text-align: start;
+    box-shadow: 0 0 5px black;
+}
+
+#content {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
